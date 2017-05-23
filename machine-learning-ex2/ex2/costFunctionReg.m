@@ -19,9 +19,10 @@ grad = zeros(size(theta));
 
 hx = sigmoid(X * theta);
 reg_theta = theta;
-reg_theta(2:size(theta)) = theta(2:size(theta)).^2;
+reg_theta(1) = 0;
+cost_reg_theta = reg_theta' * reg_theta;
 
-J = ((1 / m) * (-y' * log(hx) - ((ones(size(y)) - y)' * log(1 - hx)))) + ((lambda / (2 * m)) * reg_theta);
+J = ((1 / m) * (-y' * log(hx) - ((ones(size(y)) - y)' * log(1 - hx)))) + ((lambda / (2 * m)) * cost_reg_theta);
 
 reg_theta(2:size(theta)) = (lambda / m) * theta(2:size(theta));
 grad = ((1 / m) * ((hx - y)' * X)') + reg_theta;
