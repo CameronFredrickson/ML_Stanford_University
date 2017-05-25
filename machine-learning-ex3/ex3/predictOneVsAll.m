@@ -28,11 +28,15 @@ X = [ones(m, 1) X];
 %       max element, for more information see 'help max'. If your examples 
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
-%       
-X * all_theta'
-p = max(X * all_theta')
+%
+%    for i = 1: size(X)
+%        p(i) = find(max((X * all_theta')(i, :)) == (X * all_theta')(i, :)); 
+%    end
+
+[i, j] = find(max(X * all_theta', [], 2) == (X * all_theta'));
+new = [i, j];
+p = sortrows(new)(:, 2);
 
 % =========================================================================
-
 
 end
