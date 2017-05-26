@@ -29,13 +29,10 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max 
 %       for each row.
 %
-%    for i = 1: size(X)
-%        p(i) = find(max((X * all_theta')(i, :)) == (X * all_theta')(i, :)); 
-%    end
 
-[i, j] = find(max(X * all_theta', [], 2) == (X * all_theta'));
-new = [i, j];
-p = sortrows(new)(:, 2);
+hx = sigmoid(X * all_theta');
+[i, j] = find(max(hx, [], 2) == hx);
+p = sortrows([i j])(:, 2);
 
 % =========================================================================
 
