@@ -9,3 +9,6 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 4. Each parameter (j) is a matrix of weights controlling function mapping from layer j to layer j + 1
 5. Dimensions of weight matrices are determined like so:
 	* If network has s(j) units in layer j and s(j+1) units in layer j + 1, then Theta(j) will be of dimension s(j+1) x (s(j) + 1)
+
+## Week 5: Backpropagation
+1. 
