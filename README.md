@@ -12,4 +12,6 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 
 ## Week 5: Backpropagation
 1. Neural networks have many output nodes, to account for this the cost function associated with neural networks contain nested summations that loop through the number of output nodes.
-	![J(\Theta) = \frac{-1}{m} \sum_{i=1}^m \sum{k=1}^K](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)
+2. Lower case delta sub j in layer l is the error for the activation function j in layer l, these delta values are equivalent to the derivative of the cost function. Lower case delta l is computed by subtracting the value(s) of the units in the last layer of the network from the actual results (y).
+3. Each subsequent value of lower case delta (lower case delta in layer l - 1) is calculated by multiplying lower case delta in layer l and the theta values associated with the layer l - 1
+4. In order to check if your implementation of backpropagation is correct you can approximately compute the gradient using (J(T + e) - J(T - e))/2e with an e value of 10^(-4) (for example). If our values for Delta are approximately equal to our gradient approximation values the backpropogation has most likely been implemented correctly.
