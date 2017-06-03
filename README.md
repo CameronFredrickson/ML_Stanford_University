@@ -34,6 +34,7 @@ Partial Derivative of Theta(l)(ij) * J(Theta) = Delta(l)(ij)
 Theta1 = rand(10, 11) * (2 * initEpsilon) - initEpsilon
 ```
 In which rand is a function in octave that will initialize a matrix of random real numbers between 0 and 1
+
 8. Picking a neural network architechture:
 	* Default being 1 hidden layer, and if you have more than one hidden layer it is recommended that you have the same number of units in each hidden layer.
 9. Training a neural network
