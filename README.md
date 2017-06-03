@@ -34,3 +34,15 @@ Partial Derivative of Theta(l)(ij) * J(Theta) = Delta(l)(ij)
 Theta1 = rand(10, 11) * (2 * initEpsilon) - initEpsilon
 ```
 In which rand is a function in octave that will initialize a matrix of random real numbers between 0 and 1
+8. Picking a neural network architechture:
+	* Default being 1 hidden layer, and if you have more than one hidden layer it is recommended that you have the same number of units in each hidden layer.
+9. Training a neural network
+	1. Randomly initialize the weights
+	2. Implement forward propagation to get h(Theta) for all x(i)
+	3. Implement the cost function J(Theta)
+	4. Implement backpropagation to compute partial derivatives
+	5. Use gradient approximation to confirm backpropagation works, disable gradient approximation
+	6. Use gradient descent or an optimization function to minimize the cost function with the weights in theta.
+	7. Preform forward and backwards propagation on m training examples
+(Keep in mind J(Theta) is not convex and can end up in a local minimum instead of a global minimum)
+
