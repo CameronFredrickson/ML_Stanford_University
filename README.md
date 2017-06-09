@@ -1,10 +1,21 @@
 # ML_Stanford_University
 Andrew Ng's machine learning course at Stanford, available through Coursera
 
+## Week 1: What is Machine Learning?
+1. "The field of study that gives computers the ability to learn without being explicitly programmed." -Arthur Samuel
+2. "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -Tom Mitchell
+3. Supervised learning
+	1. a data set of inputs to corresponding outputs is provided in order to "learn"
+	2. Often considered a regression problem, in order to predict continuous output values
+	3. u 
+4. Unsupervised learning
+	1. u
+
+
 ## Week 4: Neural Networks
 ### Neurons are computational units that take in inputs via dendrites and output electricity through axons
 1. The input layer is comprised of the features (columns) in the design matrix (X(:,1), X(:,2), ..., X(:,n)); analogous to the dendrites of a neuron.
-2. The ouptut layer gives us the result of the hypothesis function (also known as the activation function). Neural networks use the simgmoid function to calculate this value as seen earlier in logistic regression.
+2. The ouptut layer gives us the result of the hypothesis function (also known as the activation function); analogous to the axons of a neuron. Neural networks use the simgmoid function to calculate this value as seen earlier in logistic regression.
 3. The hidden layers in the network exist between the input and output layers of the network and contain the activation units. Each activation unit contains an expression made up of the input features of a training example (a row from the design matrix, X) and weights (a row from the matrix Thetaj).
 4. Each parameter j (Theta1, Theta2, ..., Thetaj) is a matrix of weights controlling activation function mapping from layer j to layer j + 1
 5. Dimensions of weight matrices Thetaj are determined like so:
