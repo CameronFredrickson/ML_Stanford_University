@@ -6,12 +6,12 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 2. "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -Tom Mitchell
 3. Supervised learning
 	1. a data set of inputs to corresponding outputs is provided in order to "learn"
-	2. Often invlove regression problems, in order to predict continuous output values
-	3. They can also be considered classification problems in order to predict discrete output values.
+	2. Can be regression problems, in order to predict continuous output values i.e. predicting housing prices given square footage, location, etc.
+	3. They can also be classification problems in order to predict discrete output values. i.e. Determining whether a tumor is benign or malignent based features taken from diagnosed patient data
 
 4. Unsupervised learning
 	1. Uses clustering algorithms to separate data into specific categories without telling the program what the categories are in advance. The algorithm should "learn" how to organize the data i.e. digital signal processing
-	2. This clustering process is shown using the Cocktail party algorithm
+	2. This clustering process is shown using the Cocktail party algorithm. Andrew used octave to separating a person's voice from background music into two separate sound clips.:
 
 ## Week 4: Neural Networks
 ### Neurons are computational units that take in inputs via dendrites and output electricity through axons
