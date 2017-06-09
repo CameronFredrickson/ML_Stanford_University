@@ -3,9 +3,9 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 
 ## Week 4: Neural Networks
 ### Neurons are computational units that take in inputs via dendrites and output electricity through axons
-1. The input layer is comprised of the features (rows) in the design matrix (X(1), X(2), ..., X(n)); analogous to the dendrites of a neuron.
+1. The input layer is comprised of the features (columns) in the design matrix (X(:,1), X(:,2), ..., X(:,n)); analogous to the dendrites of a neuron.
 2. The ouptut layer gives us the result of the hypothesis function (also known as the activation function). Neural networks use the simgmoid function to calculate this value as seen earlier in logistic regression.
-3. The hidden layers in the network exist between the input and output layers of the network and contain the activation units. Each of the activation unit contains an expression made up of our input features (design matrix, X) and parameters (weights, the rows of Theta).
+3. The hidden layers in the network exist between the input and output layers of the network and contain the activation units. Each activation unit contains an expression made up of the input features of a training example (a row from the design matrix, X) and weights (a row from the matrix Thetaj).
 4. Each parameter j (Theta1, Theta2, ..., Thetaj) is a matrix of weights controlling activation function mapping from layer j to layer j + 1
 5. Dimensions of weight matrices Thetaj are determined like so:
 	* If network has s(j) units in layer j and s(j+1) units in layer j + 1, then Theta(j) will be of dimension s(j+1) x (s(j) + 1)
