@@ -22,8 +22,8 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 	1. The cost function is used to train our weights, theta, used in the hypothesis function
 	2. in the case of linear regression the cost function should choose values of theta that minimizes the distance between a line drawn through the plotted data and all of the data points on the graph
 	3. The goal in this senario is to minimize the squared error value (average error) in (h(x(i)) - y(i))^2
-	4. the squared error is measured over all of the input values using the cost function: $$J(\theta) = \sum_{i=1}^m frac{1}{2m}(h(x) - y)^2)$$
-
+	4. the squared error is measured over all of the input values using the cost function formula: $$J(\theta) = \frac{1}{2m} sum_{i=1}^m (h(x) - y)^2)$$
+	5. the 1/2 term in front of the summation simplifies the math when the derivative of the cost function is taken
 ## Week 4: Neural Networks
 ### Neurons are computational units that take in inputs via dendrites and output electricity through axons
 1. The input layer is comprised of the features (columns) in the design matrix (X(:,1), X(:,2), ..., X(:,n)); analogous to the dendrites of a neuron.
