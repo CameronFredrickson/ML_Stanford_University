@@ -11,7 +11,21 @@ Andrew Ng's machine learning course at Stanford, available through Coursera
 
 4. Unsupervised learning
 	1. Uses clustering algorithms to separate data into specific categories without telling the program what the categories are in advance. The algorithm should "learn" how to organize the data i.e. digital signal processing
-	2. This clustering process is shown using the Cocktail party algorithm. Andrew used octave to separating a person's voice from background music into two separate sound clips.:
+	2. This clustering process is shown using the Cocktail party algorithm. Andrew used this algorithm to separate a person's voice from background music.
+5. Model Representation (supervised learning)
+	1. each input feature x(i) is mapped to a corresponding output y(i)
+	2. each {x(i), y(i)} is a training example from a training set {{x(1), y(1)}, {x(2), y(2)}, ..., {x(i), y(i)}}, where m represents the number of training examples in the set
+	3. Using the training set, the goal is to produce a hypothesis function h(x) that accurately produces new ouputs from new input values not contained within the training set.
+	4. If the model is predicting continuous values, the learning algorithm is used to solve a regression problem
+	5. If the model is predicting discrete values, the learning algorithm is used to solve a classification problem
+6. Cost Function
+	1. The cost function is used to train our weights, theta, used in the hypothesis function
+	2. in the case of linear regression the cost function should choose values of theta that minimizes the distance between a line drawn through the plotted data and all of the data points on the graph
+	3. The goal in this senario is to minimize the squared error value (average error) in (h(x(i)) - y(i))^2
+	4. the squared error is measured over all of the input values using the cost function
+''' Latex
+J(\theta) = \sum_{i=1}^m frac{1}{2m}(h(x) - y)^2)
+'''	
 
 ## Week 4: Neural Networks
 ### Neurons are computational units that take in inputs via dendrites and output electricity through axons
